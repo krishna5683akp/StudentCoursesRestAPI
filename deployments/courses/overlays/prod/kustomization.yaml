@@ -1,0 +1,12 @@
+---
+resources:
+- ../../base
+namePrefix: prod-
+images:
+  - name: courses
+    newName: madasu/courses
+    newTag: prod-latest
+namespace: prod ## kustomize feature list
+replicas:
+  - name: courses
+    count: 5
